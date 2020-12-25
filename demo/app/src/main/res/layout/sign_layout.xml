@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
     <Button
         android:id="@+id/back2_button"
@@ -8,77 +9,100 @@
         android:layout_height="wrap_content"
         android:text="返回实验作业目录"
         />
-    <TextView
-        android:id="@+id/text_title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="MOTHERFUCKER"
-        android:gravity="center"
-        android:textSize="30dp"
-        android:textColor="#ff0000"
-        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="50dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:src="@drawable/welcome"/>
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="实验二"
+                android:gravity="left"
+                android:textSize="70dp"
+                android:textColor="#000000"
+                />
+        </LinearLayout>
+
+
+
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/edit_background">
         <TextView
             android:id="@+id/text_usrname"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="用户名："
+            android:layout_marginLeft="14dp"
             android:textSize="20dp"
             />
         <EditText
             android:id="@+id/edit_usrname"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="5"
-            android:hint="用户名"
+            android:layout_marginLeft="30dp"
             android:maxLines="2"
             />
     </LinearLayout>
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:background="@drawable/edit_background">
         <TextView
             android:id="@+id/text_password"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="密码："
+            android:layout_marginLeft="24dp"
             android:textSize="20dp"
             />
         <EditText
             android:id="@+id/edit_password"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="5"
-            android:hint="密码"
             android:inputType="numberPassword"
+            android:layout_marginLeft="40dp"
             android:maxLines="2"
             />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
+
+    <ImageButton
+        android:id="@+id/signin_button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:background="@drawable/signin_btn"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        />
 
-        <Button
-            android:id="@+id/signin_button"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="登录" />
-
-        <Button
-            android:id="@+id/signon_button"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="注册" />
-    </LinearLayout>
+    <Button
+        android:id="@+id/reg_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/white"
+        android:textColor="#aaaaaa"
+        android:shadowColor="@color/white"
+        android:text="注册"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        />
 </LinearLayout>

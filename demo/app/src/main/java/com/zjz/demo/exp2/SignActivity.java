@@ -1,4 +1,4 @@
-package com.zjz.demo;
+package com.zjz.demo.exp2;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,7 +8,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
+
+import com.zjz.demo.HomeActivity;
+import com.zjz.demo.R;
 
 public class SignActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -21,8 +25,12 @@ public class SignActivity extends AppCompatActivity implements View.OnClickListe
         back_button.setOnClickListener(this);
 
         //登录提示
-        Button signin_button = (Button)findViewById(R.id.signin_button);
+        ImageButton signin_button = (ImageButton)findViewById(R.id.signin_button);
         signin_button.setOnClickListener(this);
+
+        //注册
+        Button reg_btn = (Button)findViewById(R.id.reg_button);
+        reg_btn.setOnClickListener(this);
     }
 
     @Override
@@ -43,15 +51,18 @@ public class SignActivity extends AppCompatActivity implements View.OnClickListe
                             .setTitle("👈←←👈←←👈←←👈←←")
                             .setMessage("登陆成功！！！！")
                             .setIcon(R.drawable.sexsi)
-                            .setPositiveButton("很确定", null)
-                            .setNegativeButton("确定", null)
+                            .setPositiveButton("确定", null)
+                            .setNegativeButton("取消", null)
                             .show();
                 } else {
                     Toast.makeText(SignActivity.this,"账号是“admin”，密码是“12345”",Toast.LENGTH_LONG).show();
                 }
                 break;
             }
-
+            case R.id.reg_button:{
+                Intent intent = new Intent(this, RegActivity.class);
+                startActivity(intent);
+            }
         }
     }
 }
