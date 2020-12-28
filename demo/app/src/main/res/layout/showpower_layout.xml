@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relative_showpower"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@drawable/flash"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="40dp">
+    <TextView
+        android:id="@+id/back4_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:layout_marginLeft="15dp"
+        android:textSize="30dp"
+        android:clickable="true"/>
+    <TextView
+        android:id="@+id/tv_showpower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:text="点击更新电量"
+        android:textColor="@color/white"
+        android:textSize="40dp"/>
+</RelativeLayout>

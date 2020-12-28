@@ -62,6 +62,7 @@ public class SignActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.reg_button:{
                 Intent intent = new Intent(this, RegActivity.class);
                 startActivity(intent);
+                break;
             }
         }
     }

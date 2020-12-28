@@ -73,6 +73,7 @@ public class RegActivity extends AppCompatActivity implements View.OnClickListen
                         .setPositiveButton("确定", null)
                         .setNegativeButton("取消", null)
                         .show();
+                break;
             }
         }
     }

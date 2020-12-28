@@ -15,4 +15,10 @@
         android:layout_height="wrap_content"
         android:text="实验3：新建联系人和浏览器"
         />
+    <Button
+        android:id="@+id/exp4_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="实验4：显示电量"
+        />
 </LinearLayout>

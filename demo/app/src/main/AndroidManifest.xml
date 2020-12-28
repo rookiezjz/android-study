@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Demo">
-        <activity android:name=".exp3.AddMemberAcitivity"></activity>
+        <activity android:name=".exp4.ShowPowerActivity"></activity>
+        <activity android:name=".exp3.AddMemberAcitivity" />
         <activity android:name=".exp3.ShowMembersActivity" />
         <activity android:name=".exp2.RegActivity" />
         <activity android:name=".HomeActivity">

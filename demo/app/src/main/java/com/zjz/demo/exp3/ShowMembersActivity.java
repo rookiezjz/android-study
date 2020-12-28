@@ -61,6 +61,7 @@ public class ShowMembersActivity extends AppCompatActivity implements View.OnCli
                     intent.setData(targetUrl);
                     startActivity(intent);
                 }
+                break;
             }
         }
     }

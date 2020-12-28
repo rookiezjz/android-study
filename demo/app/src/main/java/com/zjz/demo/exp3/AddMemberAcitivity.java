@@ -47,6 +47,7 @@ public class AddMemberAcitivity extends AppCompatActivity implements View.OnClic
                     intent.putExtra("MemberAddress", sMemberAddress);
                     startActivity(intent);
                 }
+                break;
             }
         }
     }
