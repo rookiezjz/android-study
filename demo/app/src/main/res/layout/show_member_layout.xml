@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee">
+    <TextView
+        android:id="@+id/back3_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:clickable="true"
+        />
+    <TextView
+        android:id="@+id/btn_addmember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新建"
+        android:textColor="#1e90ff"
+        android:clickable="true"
+        android:layout_alignParentRight="true"
+        android:textSize="25dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"/>
+    <ImageView
+        android:id="@+id/img_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/headshot"
+        android:layout_below="@id/btn_addmember"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:id="@+id/tv_showname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="姓名"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:layout_below="@+id/img_head"/>
+
+    <LinearLayout
+        android:id="@+id/linear_shownumber"
+        android:layout_width="362dp"
+        android:layout_height="77dp"
+        android:layout_below="@id/tv_showname"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edit_background2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_shownumbertitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="    手机："
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_shownumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    01234567891"
+            android:textColor="#1e90ff"
+            android:textSize="21dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/liner_showaddress"
+        android:layout_width="362dp"
+        android:layout_height="77dp"
+        android:layout_below="@id/linear_shownumber"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edit_background2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_showaddtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="    地址："
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_showadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    杭州小和山"
+            android:textColor="#1e90ff"
+            android:textSize="21dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_divline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/liner_showaddress"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/div_line"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/img_divline">
+        <LinearLayout
+            android:id="@+id/linear_url"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/img_divline"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/edit_background2">
+            <EditText
+                android:id="@+id/et_show_url"
+                android:layout_width="296dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/edit_background2"
+                android:hint="           " />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/btn_show_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:textSize="20dp"
+            android:textColor="#1e90ff"
+            android:clickable="true"
+            android:layout_below="@id/img_divline"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/linear_url"/>
+    </LinearLayout>
+</RelativeLayout>
