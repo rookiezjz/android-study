@@ -10,6 +10,7 @@ import android.widget.Button;
 import com.zjz.demo.exp2.SignActivity;
 import com.zjz.demo.exp3.ShowMembersActivity;
 import com.zjz.demo.exp4.ShowPowerActivity;
+import com.zjz.demo.exp5.MusicPlayerActivity;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -28,6 +29,10 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         // 实验4
         Button exp4_button = (Button)findViewById(R.id.exp4_button);
         exp4_button.setOnClickListener(this);
+
+        //实验5
+        Button exp5_button = (Button)findViewById(R.id.exp5_btn);
+        exp5_button.setOnClickListener(this);
     }
 
     @Override
@@ -45,6 +50,11 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
             }
             case R.id.exp4_button:{
                 Intent intent = new Intent(HomeActivity.this, ShowPowerActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case R.id.exp5_btn:{
+                Intent intent = new Intent(this, MusicPlayerActivity.class);
                 startActivity(intent);
                 break;
             }
