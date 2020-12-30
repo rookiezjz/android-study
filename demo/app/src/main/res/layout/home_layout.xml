@@ -26,4 +26,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="实验5：音乐播放器"/>
+    <Button
+        android:id="@+id/exp6_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="实验6：数据储存"/>
 </LinearLayout>
