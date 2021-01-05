@@ -12,6 +12,7 @@ import com.zjz.demo.exp3.ShowMembersActivity;
 import com.zjz.demo.exp4.ShowPowerActivity;
 import com.zjz.demo.exp5.MusicPlayerActivity;
 import com.zjz.demo.exp6.DataStoreActivity;
+import com.zjz.demo.exp7.UserManagerActivity;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -38,6 +39,10 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         //实验6
         Button exp6_button = (Button)findViewById(R.id.exp6_btn);
         exp6_button.setOnClickListener(this);
+
+        //实验7
+        Button exp7_button = (Button)findViewById(R.id.exp7_btn);
+        exp7_button.setOnClickListener(this);
     }
 
     @Override
@@ -65,6 +70,11 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
             }
             case R.id.exp6_btn:{
                 Intent intent = new Intent(this, DataStoreActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case R.id.exp7_btn:{
+                Intent intent = new Intent(this, UserManagerActivity.class);
                 startActivity(intent);
                 break;
             }

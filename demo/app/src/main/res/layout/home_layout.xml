@@ -31,4 +31,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="实验6：数据储存"/>
+    <Button
+        android:id="@+id/exp7_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="实验7：前后端交互"/>
 </LinearLayout>
