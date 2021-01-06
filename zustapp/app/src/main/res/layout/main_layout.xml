@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="@color/back_green">
     <ImageView
-        android:id="@+id/img_home_logo"
+        android:id="@+id/img_main_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/zust_logo"
@@ -12,13 +12,13 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"/>
     <TextView
-        android:id="@+id/tv_home_title"
+        android:id="@+id/tv_main_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="用户登录"
         android:textSize="50dp"
-        android:layout_below="@id/img_home_logo"
+        android:layout_below="@id/img_main_logo"
         android:textColor="@color/white"
         android:layout_marginTop="60dp"/>
 
@@ -26,11 +26,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/type_back"
-        android:layout_below="@+id/tv_home_title"
+        android:layout_below="@+id/tv_main_title"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true">
         <EditText
-            android:id="@+id/et_home_type"
+            android:id="@+id/et_main_type"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:focusableInTouchMode="false"
@@ -42,11 +42,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/user_back"
-        android:layout_below="@+id/img_home_logo"
+        android:layout_below="@+id/img_main_logo"
         android:layout_marginTop="210dp"
         android:layout_centerHorizontal="true">
         <EditText
-            android:id="@+id/et_home_username"
+            android:id="@+id/et_main_username"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_marginTop="20dp"
@@ -56,12 +56,12 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/img_home_logo"
+        android:layout_below="@+id/img_main_logo"
         android:background="@drawable/password_back"
         android:layout_marginTop="290dp"
         android:layout_centerHorizontal="true">
         <EditText
-            android:id="@+id/et_home_password"
+            android:id="@+id/et_main_password"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_marginLeft="80dp"
@@ -69,14 +69,15 @@
             android:hint="                                     "/>
     </LinearLayout>
     <CheckBox
-        android:id="@+id/cb_home_remember"
+        android:id="@+id/cb_main_remember"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="记住密码"
+        android:clickable="true"
         android:layout_marginTop="430dp"
         android:layout_marginLeft="70dp"/>
     <Button
-        android:id="@+id/btn_home_login"
+        android:id="@+id/btn_main_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="登录"
@@ -85,7 +86,7 @@
         android:layout_centerHorizontal="true"/>
 
     <TextView
-        android:id="@+id/tv_home_register"
+        android:id="@+id/tv_main_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="立即注册"
