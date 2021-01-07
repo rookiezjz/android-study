@@ -1,53 +1,44 @@
+
 package cn.edu.zust.lxy.zjz;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.ListView;
-
-import java.util.ArrayList;
-import java.util.List;
+import android.view.View;
+import android.widget.Button;
 
 import cn.edu.zust.lxy.zjz.zustapp.R;
 
-public class AdminActivity extends AppCompatActivity {
-    private List<User> userList = new ArrayList<>();
-    private MyDatabaseHelper dbHelper;
-
+public class AdminActivity extends AppCompatActivity implements View.OnClickListener{
+    Button btn_userInfo, btn_class1, btn_class2, btn_notice;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.admin_layout);
-        initUsers(); //初始化用户数据
-        UserAdapter adapter = new UserAdapter(this, R.layout.user_item,
-                userList);
-        ListView listview = (ListView) findViewById(R.id.list_view);
-        listview.setAdapter(adapter);
+
+        btn_userInfo = (Button)findViewById(R.id.btn_admin_userinfo);
+        btn_class1 = (Button)findViewById(R.id.btn_admin_class1);
+        btn_class2 = (Button)findViewById(R.id.btn_admin_class2);
+        btn_notice = (Button)findViewById(R.id.btn_admin_notice);
+
+        btn_notice.setOnClickListener(this);
+        btn_userInfo.setOnClickListener(this);
+        btn_class1.setOnClickListener(this);
+        btn_class2.setOnClickListener(this);
     }
 
-    private void initUsers() {
-        dbHelper = new MyDatabaseHelper(this, "User.db", null, 1);
-        SQLiteDatabase db = dbHelper.getWritableDatabase();
-
-        Cursor cur = db.rawQuery("select * from UserInfo", null);
-        String sType=null, sUsername=null, sPassword=null;
-        if(cur.moveToFirst()) {
-            sType = cur.getString(3);
-            sUsername = cur.getString(1);
-            sPassword = cur.getString(2);
-            User u = new User(sUsername, sPassword, sType);
-            userList.add(u);
+    @Override
+    public void onClick(View v) {
+        Intent i;
+        switch (v.getId()) {
+            case R.id.btn_admin_userinfo:{
+                i = new Intent(this, ShowUserInfoActivity.class);
+                break;
+            }
+            default: {
+            }
         }
-        while(cur.moveToNext()) {
-            sType = cur.getString(3);
-            sUsername = cur.getString(1);
-            sPassword = cur.getString(2);
-            User u = new User(sUsername, sPassword, sType);
-            userList.add(u);
-        }
-//        Toast.makeText(this, cur.getString(1), Toast.LENGTH_SHORT).show();
-        cur.close();
+        startActivity(i);
     }
 }

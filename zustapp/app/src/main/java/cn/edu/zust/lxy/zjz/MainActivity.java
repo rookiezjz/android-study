@@ -76,9 +76,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     if(et_type.getText().toString().equals("管理员"))
                         i = new Intent(this, AdminActivity.class);
                     else if(et_type.getText().toString().equals("信息与计算科学181"))
-                        i = new Intent(this, Home1Activity.class);
+                        i = new Intent(this, Class1Activity.class);
                     else
-                        i = new Intent(this, Home2Activity.class);
+                        i = new Intent(this, Class2Activity.class);
                     startActivity(i);
                 }else
                     Toast.makeText(this, "用户类型、账号或密码错误！",Toast.LENGTH_SHORT).show();
