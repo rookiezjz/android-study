@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tv_register.setOnClickListener(this);
 
         // 记住密码
-        sp = getSharedPreferences("login",MODE_PRIVATE);
+        sp = getSharedPreferences("sp_data",MODE_PRIVATE);
         boolean isRemember = sp.getBoolean("sp_isRemember",false);
         if(isRemember){
             String type = sp.getString("sp_type","");
@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             et_password.setText(userpassword);
             cb_remember.setChecked(true);
         }
+
     }
     @Override
     public void onClick(View v) {
@@ -72,6 +73,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 // 检查账号密码
                 if(!type.isEmpty() && !username.isEmpty() && !password.isEmpty() && checkPassword(type, username, password)) {
+                    SharedPreferences.Editor editor = sp.edit();
+                    editor.putString("sp_now_type", type);
+                    editor.putString("sp_now_name", username);
                     Intent i;
                     if(et_type.getText().toString().equals("管理员"))
                         i = new Intent(this, AdminActivity.class);
@@ -105,7 +109,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     Toast.makeText(this,"记住密码！",Toast.LENGTH_SHORT).show();
                 }else
                     Toast.makeText(this,"取消记住密码！",Toast.LENGTH_SHORT).show();
-
                 break;
             }
             //用户注册

@@ -12,7 +12,41 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"/>
 <TextView
+    android:id="@+id/tv_class1_title"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="信计181"/>
+    android:text="信计181"
+    android:layout_below="@+id/img_class1_logo"
+    android:layout_centerHorizontal="true"
+    android:textSize="40dp"
+    android:textColor="@color/white"
+    android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_class1_title"
+        android:text="公告："
+        android:textColor="@color/white"
+        android:textSize="30dp"/>
+    <TextView
+        android:id="@+id/tv_class1_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_class1_title"
+        android:layout_marginTop="40dp"
+        android:text="sadadadadsdadadsadasdadsadsaddasd"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_class1_notice"
+        android:text="课表："
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:textSize="30dp"/>
+
 </RelativeLayout>

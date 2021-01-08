@@ -5,11 +5,15 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class MyDatabaseHelper extends SQLiteOpenHelper {
-    public static final String CERATE_TABLE = "create table UserInfo ("
+    public static final String CERATE_USER_TABLE = "create table UserInfo ("
             + "id integer primary key AUTOINCREMENT, "
             + "username text, "
             + "password text, "
             + "type text)";
+    public static final String CERATE_MESSAGE_TABLE = "create table Message ("
+            + "id integer primary key AUTOINCREMENT, "
+            + "author text, "
+            + "msg text)";
     public static final String ADD_ADMIN = "insert into UserInfo values (1, 'admin', 'admin', '管理员')";
     private Context mContext;
 
@@ -21,7 +25,8 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(CERATE_TABLE);
+        db.execSQL(CERATE_USER_TABLE);
+        db.execSQL(CERATE_MESSAGE_TABLE);
         db.execSQL(ADD_ADMIN);
     }
 
