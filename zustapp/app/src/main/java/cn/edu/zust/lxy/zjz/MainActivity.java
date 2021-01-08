@@ -74,8 +74,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 // 检查账号密码
                 if(!type.isEmpty() && !username.isEmpty() && !password.isEmpty() && checkPassword(type, username, password)) {
                     SharedPreferences.Editor editor = sp.edit();
-                    editor.putString("sp_now_type", type);
                     editor.putString("sp_now_name", username);
+                    editor.commit();
                     Intent i;
                     if(et_type.getText().toString().equals("管理员"))
                         i = new Intent(this, AdminActivity.class);
@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public boolean checkPassword(String type, String username, String password) {
-        dbHelper = new MyDatabaseHelper(this, "User.db", null, 1);
+        dbHelper = new MyDatabaseHelper(this, "Data.db", null, 1);
         SQLiteDatabase db = dbHelper.getWritableDatabase();
 
         Cursor cur = db.rawQuery("select * from UserInfo where username = \""+et_username.getText().toString()+"\"", null);

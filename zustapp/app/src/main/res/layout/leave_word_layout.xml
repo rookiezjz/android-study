@@ -12,10 +12,6 @@
         android:layout_marginTop="20dp"
         android:textSize="40dp"
         android:textColor="@color/white"/>
-    <ListView
-        android:id="@+id/list_message"
-        android:layout_width="match_parent"
-        android:layout_height="540dp"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -33,4 +29,8 @@
             android:textSize="20dp"
             android:text="提交留言"/>
     </LinearLayout>
+    <ListView
+        android:id="@+id/list_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 </LinearLayout>

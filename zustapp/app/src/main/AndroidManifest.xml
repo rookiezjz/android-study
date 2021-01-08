@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Zustapp">
-        <activity android:name="cn.edu.zust.lxy.zjz.EditNoticeActivity"></activity>
+        <activity android:name="cn.edu.zust.lxy.zjz.LeaveWordActivity"></activity>
+        <activity android:name="cn.edu.zust.lxy.zjz.EditNoticeActivity" />
         <activity android:name="cn.edu.zust.lxy.zjz.AdminActivity" />
         <activity android:name="cn.edu.zust.lxy.zjz.Class2Activity" />
         <activity android:name="cn.edu.zust.lxy.zjz.Class1Activity" />

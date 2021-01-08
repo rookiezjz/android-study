@@ -49,7 +49,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             else if(password.equals(""))
                 Toast.makeText(this, "请填入密码",Toast.LENGTH_SHORT).show();
             else {
-                dbHelper = new MyDatabaseHelper(this, "User.db", null, 1);
+                dbHelper = new MyDatabaseHelper(this, "Data.db", null, 1);
                 SQLiteDatabase db = dbHelper.getWritableDatabase();
                 ContentValues values = new ContentValues();
                 //组装数据

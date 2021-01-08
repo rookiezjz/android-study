@@ -28,7 +28,7 @@ public class ShowUserInfoActivity extends AppCompatActivity {
     }
 
     private void initUsers() {
-        dbHelper = new MyDatabaseHelper(this, "User.db", null, 1);
+        dbHelper = new MyDatabaseHelper(this, "Data.db", null, 1);
         SQLiteDatabase db = dbHelper.getWritableDatabase();
 
         Cursor cur = db.rawQuery("select * from UserInfo", null);

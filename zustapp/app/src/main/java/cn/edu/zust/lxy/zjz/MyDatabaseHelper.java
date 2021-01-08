@@ -5,16 +5,17 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class MyDatabaseHelper extends SQLiteOpenHelper {
-    public static final String CERATE_USER_TABLE = "create table UserInfo ("
+    public static final String CREATE_USER_TABLE = "create table UserInfo ("
             + "id integer primary key AUTOINCREMENT, "
             + "username text, "
             + "password text, "
             + "type text)";
-    public static final String CERATE_MESSAGE_TABLE = "create table Message ("
+    public static final String CREATE_MESSAGE_TABLE = "create table Message ("
             + "id integer primary key AUTOINCREMENT, "
             + "author text, "
             + "msg text)";
     public static final String ADD_ADMIN = "insert into UserInfo values (1, 'admin', 'admin', '管理员')";
+    public static final String ADD_MESSAGE = "insert into Message values (1, 'admin:', '欢迎来到ZUSTAPP')";
     private Context mContext;
 
     public MyDatabaseHelper(Context context, String name,
@@ -25,9 +26,10 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(CERATE_USER_TABLE);
-        db.execSQL(CERATE_MESSAGE_TABLE);
+        db.execSQL(CREATE_USER_TABLE);
+        db.execSQL(CREATE_MESSAGE_TABLE);
         db.execSQL(ADD_ADMIN);
+        db.execSQL(ADD_MESSAGE);
     }
 
     @Override
