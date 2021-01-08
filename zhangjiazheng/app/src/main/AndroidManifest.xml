@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.edu.zust.lxy.zhangjiazheng">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Zhangjiazheng" >
+        <activity android:name="cn.edu.zust.lxy.zhangjiazheng.LeaveWordActivity"></activity>
+        <activity android:name="cn.edu.zust.lxy.zhangjiazheng.EditNoticeActivity" />
+        <activity android:name="cn.edu.zust.lxy.zhangjiazheng.AdminActivity" />
+        <activity android:name="cn.edu.zust.lxy.zhangjiazheng.Class2Activity" />
+        <activity android:name="cn.edu.zust.lxy.zhangjiazheng.Class1Activity" />
+        <activity android:name="cn.edu.zust.lxy.zhangjiazheng.ShowUserInfoActivity" />
+        <activity android:name="cn.edu.zust.lxy.zhangjiazheng.RegisterActivity" />
+        <activity android:name="cn.edu.zust.lxy.zhangjiazheng.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
