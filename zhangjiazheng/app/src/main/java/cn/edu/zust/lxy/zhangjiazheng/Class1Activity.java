@@ -59,6 +59,7 @@ public class Class1Activity extends AppCompatActivity implements View.OnClickLis
         class53 = (TextView)findViewById(R.id.class153); class53.setText(sp.getString("class153","无"));
         class54 = (TextView)findViewById(R.id.class154); class54.setText(sp.getString("class154","无"));
     }
+
     @Override
     public void onClick(View v) {
         if(v==tv_message) {
