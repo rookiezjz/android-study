@@ -51,7 +51,7 @@
             android:layout_height="40dp"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="80dp"
-            android:hint="                                     "/>
+            android:hint="                                   "/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -66,7 +66,7 @@
             android:layout_height="40dp"
             android:layout_marginLeft="80dp"
             android:inputType="textPassword"
-            android:hint="                                     "/>
+            android:hint="                                   "/>
     </LinearLayout>
     <CheckBox
         android:id="@+id/cb_main_remember"
