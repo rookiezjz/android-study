@@ -1,0 +1,35 @@
+cn/edu/zust/lxy/zhangjiazheng/User.java
+ cn.edu.zust.lxy.zhangjiazheng.User
+cn/edu/zust/lxy/zhangjiazheng/LeaveWordActivity.java
+ cn.edu.zust.lxy.zhangjiazheng.LeaveWordActivity
+cn/edu/zust/lxy/zhangjiazheng/Message.java
+ cn.edu.zust.lxy.zhangjiazheng.Message
+cn/edu/zust/lxy/zhangjiazheng/MyDatabaseHelper.java
+ cn.edu.zust.lxy.zhangjiazheng.MyDatabaseHelper
+cn/edu/zust/lxy/zhangjiazheng/ShowUserInfoActivity.java
+ cn.edu.zust.lxy.zhangjiazheng.ShowUserInfoActivity
+cn/edu/zust/lxy/zhangjiazheng/MessageAdapter.java
+ cn.edu.zust.lxy.zhangjiazheng.MessageAdapter
+cn/edu/zust/lxy/zhangjiazheng/Class1Activity.java
+ cn.edu.zust.lxy.zhangjiazheng.Class1Activity
+cn/edu/zust/lxy/zhangjiazheng/Class2Activity.java
+ cn.edu.zust.lxy.zhangjiazheng.Class2Activity
+cn/edu/zust/lxy/zhangjiazheng/RegisterActivity.java
+ cn.edu.zust.lxy.zhangjiazheng.RegisterActivity
+ cn.edu.zust.lxy.zhangjiazheng.RegisterActivity$1
+cn/edu/zust/lxy/zhangjiazheng/BuildConfig.java
+ cn.edu.zust.lxy.zhangjiazheng.BuildConfig
+cn/edu/zust/lxy/zhangjiazheng/UserAdapter.java
+ cn.edu.zust.lxy.zhangjiazheng.UserAdapter
+cn/edu/zust/lxy/zhangjiazheng/EditNoticeActivity.java
+ cn.edu.zust.lxy.zhangjiazheng.EditNoticeActivity
+cn/edu/zust/lxy/zhangjiazheng/MainActivity.java
+ cn.edu.zust.lxy.zhangjiazheng.MainActivity
+ cn.edu.zust.lxy.zhangjiazheng.MainActivity$1
+cn/edu/zust/lxy/zhangjiazheng/EditTableActivity.java
+ cn.edu.zust.lxy.zhangjiazheng.EditTableActivity
+ cn.edu.zust.lxy.zhangjiazheng.EditTableActivity$1
+ cn.edu.zust.lxy.zhangjiazheng.EditTableActivity$2
+ cn.edu.zust.lxy.zhangjiazheng.EditTableActivity$3
+cn/edu/zust/lxy/zhangjiazheng/AdminActivity.java
+ cn.edu.zust.lxy.zhangjiazheng.AdminActivity
